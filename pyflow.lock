@@ -1,3 +1,36 @@
-package = []
+[[package]]
+id = 2
+name = "urllib3"
+version = "1.26.9"
+source = "pypi+https://pypi.org/pypi/urllib3/1.26.9/json"
+dependencies = []
+
+[[package]]
+id = 5
+name = "six"
+version = "1.16.0"
+source = "pypi+https://pypi.org/pypi/six/1.16.0/json"
+dependencies = []
+
+[[package]]
+id = 1
+name = "selenium"
+version = "3.141.0"
+source = "pypi+https://pypi.org/pypi/selenium/3.141.0/json"
+dependencies = ["urllib3 1.26.9 pypi+https://pypi.org/pypi/urllib3/1.26.9/json"]
+
+[[package]]
+id = 3
+name = "python-dotenv"
+version = "0.20.0"
+source = "pypi+https://pypi.org/pypi/python-dotenv/0.20.0/json"
+dependencies = []
+
+[[package]]
+id = 4
+name = "python-dateutil"
+version = "2.8.2"
+source = "pypi+https://pypi.org/pypi/python-dateutil/2.8.2/json"
+dependencies = ["six 1.16.0 pypi+https://pypi.org/pypi/six/1.16.0/json"]
 
 [metadata]

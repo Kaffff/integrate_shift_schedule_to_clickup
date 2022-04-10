@@ -7,6 +7,9 @@ version = "0.1.0"
 [tool.pyflow.scripts]
 
 [tool.pyflow.dependencies]
+selenium = "^3.13.0"
+python-dotenv = "^0.20.0"
+python-dateutil = "^2.8.2"
 
 [tool.pyflow.dev-dependencies]
 

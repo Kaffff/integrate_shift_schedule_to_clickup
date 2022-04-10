@@ -1,1 +1,3 @@
 __pypackages__
+.env
+driver
