@@ -1,0 +1,3 @@
+# register_shift_to_clickup
+
+バイト先のシフト管理サイトをスクレイピングし、ClickUpにタスク登録する
