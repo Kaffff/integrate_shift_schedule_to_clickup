@@ -44,14 +44,14 @@ class ClickUp:
         self.token = token
         self.list_id = list_id
 
-    def create_task(self,start_date,due_date):
+    def create_task(self,start_date,due_date,member_id):
         headers = {
             'Authorization': self.token,
             'Content-Type': 'application/json'
         }
         data = {
             "name": "バイト",
-            "assignees": None,
+            "assignees": [member_id],
             "start_date":start_date,
             "start_date_time":True,
             "due_date":due_date,
@@ -71,6 +71,7 @@ def main():
     load_dotenv()
     api_token = os.getenv("CLICKUP_API_TOKEN")
     list_id = os.getenv("CLICKUP_LIST_ID")
+    member_id = os.getenv("CLICKUP_MEMBER_ID")
     clickup = ClickUp(api_token,list_id)
 
 
@@ -90,6 +91,6 @@ def main():
         if len(work_time)!=0:
             start_date = to_unixtime(tmp_date.date(),work_time[0])
             due_date = to_unixtime(tmp_date.date(),work_time[1])
-            clickup.create_task(start_date,due_date)
+            clickup.create_task(start_date,due_date,member_id)
         
 main()
