@@ -7,9 +7,11 @@ version = "0.1.0"
 [tool.pyflow.scripts]
 
 [tool.pyflow.dependencies]
-selenium = "^3.13.0"
-python-dotenv = "^0.20.0"
+selenium = "^2.33.0"
+python-dotenv = "^0.19.2"
 python-dateutil = "^2.8.2"
+charset-normalizer = "^2.0.12"
+requests = "^2.27.1"
 
 [tool.pyflow.dev-dependencies]
 

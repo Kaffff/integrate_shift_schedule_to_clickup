@@ -1,3 +1,3 @@
-# register_shift_to_clickup
+# integrate_shift_schedule_to_clickup
 
-バイト先のシフト管理サイトをスクレイピングし、ClickUpにタスク登録する
+バイト先のシフト管理サイトをスクレイピングし、ClickUp にタスク登録する
